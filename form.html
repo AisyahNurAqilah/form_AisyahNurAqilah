@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Form</title>
+		<style type="text/css">
+			body{font-family:Calibri, Arial; 
+			font-weight:bold;
+			}
+			.form-group.required .control-label:after{
+				content:"*";
+				color:red;
+				font-weight:Normal
+			}
+			{box-sizing: border-box;}
+			input[type=text], select, textarea{
+				width: 100%;
+				padding: 12px;
+				border: 1px solid #ccc;
+				border-radius: 1px;
+				box-sizing: border-box;
+				margin-top: 3px;
+				margin-bottom: 5px;
+				resize: vertical;
+			}
+		
+			Button[type=button]{
+				background-color:turquoise;
+				color: white;
+				padding: 12px 20px;
+				cursor: pointer;
+				border:none;
+				border-radius: 1px;
+			}
+		
+			input[type=button],Button[type=button]:hover {
+			background-color:turquoise;
+			}
+			.container {
+			border-radius:1px;
+			background-color: #F5F5F5;
+			padding: 10px;}
+			
+		</style>
+	</head>
+	<body>
+		<div class ="container">
+			<form action="your page url" method="post">
+					
+					<div class="form-group required">
+					<label class="col-md-2 control-label">Your name</label><br/>
+					<input type="text" class="form-control" id="yname" name="name">
+					</div><br/>
+					
+					<div class="form-group required">
+					<label class="col-md-2 control-label">Your email address</label><br/>
+					<input type="text" class="form-control" id="yemailaddress" name="name">
+					</div><br/>
+					
+					<div class="form-group required">
+					<label class="col-md-2 control-label">Subject</label><br/>
+					<input type="text" class="form-control" id="subject" name="subject">
+					</div><br/>
+				
+					<div class="form-group required">
+					<label class="col-md-2 control-label">Message</label><br/>
+					<textarea class="form-control"  rows="5"></textarea>
+					</div><br/>
+			
+					<button type="button" class="btn btn-default">Send message</button>
+					<button type="button" class="btn btn-default">Preview</button>
+
+			</form>
+		</div>
+	</body>
+</html>
